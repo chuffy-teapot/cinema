@@ -24,9 +24,10 @@
 
         <ul class="menu__list">
           <li class="menu__item">
-            <ion-icon class="menu__icons" name="grid-outline"></ion-icon>
-            <ion-icon class="menu__icons menu__icons-filled" name="grid"></ion-icon>
-            <a href="#" id="menu" class="menu__link">menu</a>
+            <ion-icon class="menu__icons" name="compass-outline"></ion-icon>
+            <ion-icon class="menu__icons menu__icons-filled" name="compass"></ion-icon>
+            <a href="https://www.google.co.ug/maps/place/Жезды+100000,+Казахстан/@48.0662771,67.0533156,15z/data=!3m1!4b1!4m12!1m6!3m5!1s0x423d65acac01ffc1:0x6c85d1534594448f!2z0J_QvtGH0YLQvtCy0L7QtSDQvtGC0LTQtdC70LXQvdC40LUg4oSWOQ!8m2!3d47.9028773!4d67.528059!3m4!1s0x423d39243deb12d3:0x45545ce85df25b92!8m2!3d48.0679852!4d67.0571136"
+              id="menu" class="menu__link">location</a>
           </li>
 
           <li class="menu__item">
@@ -38,13 +39,13 @@
           <li class="menu__item">
             <ion-icon class="menu__icons" name="pricetags-outline"></ion-icon>
             <ion-icon class="menu__icons menu__icons-filled" name="pricetags"></ion-icon>
-            <a href="#" class="menu__link">sessions</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="menu__link">sessions</a>
           </li>
 
           <li class="menu__item">
-            <ion-icon class="menu__icons" name="bookmark-outline"></ion-icon>
-            <ion-icon class="menu__icons menu__icons-filled" name="bookmark"></ion-icon>
-            <a href="#" class="menu__link">bookmarks</a>
+            <ion-icon class="menu__icons" name="cart-outline"></ion-icon>
+            <ion-icon class="menu__icons menu__icons-filled" name="cart"></ion-icon>
+            <a href="#" class="menu__link">cart</a>
           </li>
         </ul><!-- /menu__list -------------------->
 
@@ -128,9 +129,9 @@
                   <span class="tablet__rating">8.9/10</span>
 
                   <div class="tablet__icons-box">
-                    <span class="tablet__bookmark">book</span>
-                    <ion-icon class="tablet__icons" name="bookmark-outline"></ion-icon>
-                    <ion-icon class="tablet__icons tablet__icons-filled" name="bookmark"></ion-icon>
+                    <span class="tablet__bookmark">add</span>
+                    <ion-icon class="tablet__icons" name="cart-outline"></ion-icon>
+                    <ion-icon class="tablet__icons tablet__icons-filled" name="cart"></ion-icon>
                   </div>
 
                   <a class="tablet__link" href="#popup">watch trailer</a>
@@ -187,9 +188,9 @@
               </li>
 
               <li class="tablet__item pop__button">
-                <img class="tablet__img" src="./img/mandalorian.jpg" width="100%" height="auto" alt="movie poster">
+                <img class="tablet__img" src="./img/i.jpg" width="100%" height="" alt="movie poster">
                 <div class="tablet__box">
-                  <p class="tablet__subheading">mandalorian</p>
+                  <p class="tablet__subheading">deadpool 2</p>
                   <span class="tablet__rating">8.9/10</span>
 
                   <div class="tablet__icons-box">
@@ -198,14 +199,14 @@
                     <ion-icon class="tablet__icons tablet__icons-filled" name="bookmark"></ion-icon>
                   </div>
 
-                  <a class="tablet__link" href="https://www.youtube.com/watch?v=aOC8E8z_ifw">watch trailer</a>
+                  <a class="tablet__link" href="https://www.youtube.com/watch?v=D86RtevtfrA">watch trailer</a>
                 </div>
               </li>
 
               <li class="tablet__item pop__button">
-                <img class="tablet__img" src="./img/joker.jpeg" width="100%" height="auto" alt="movie poster">
+                <img class="tablet__img" src="./img/nowayhome.jpg" width="100%" height="auto" alt="movie poster">
                 <div class="tablet__box">
-                  <p class="tablet__subheading">joker</p>
+                  <p class="tablet__subheading">spider-man: no way home</p>
                   <span class="tablet__rating">9.7/10</span>
 
                   <div class="tablet__icons-box">
@@ -214,7 +215,7 @@
                     <ion-icon class="tablet__icons tablet__icons-filled" name="bookmark"></ion-icon>
                   </div>
 
-                  <a class="tablet__link" href="https://www.youtube.com/watch?v=zAGVQLHvwOY">watch trailer</a>
+                  <a class="tablet__link" href="https://www.youtube.com/watch?v=JfVOs4VSpmA">watch trailer</a>
                 </div>
               </li>
 
@@ -228,7 +229,7 @@
 
                     <div class="popup__text">
                       <p class="popup__heading">mandalorian</p>
-                      
+
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum veritatis fuga debitis,
                         deleniti tempore accusantium labore atque eius laboriosam architecto dicta maiores neque vitae
                         nulla
@@ -251,13 +252,48 @@
 
                   <div class="popup__bottom">
                     <div class="popup__bottom-left">
-                      <div class="popup__rating-wrapper">
-                        <span class="popup__rating">9.7/10</span>
-                        <ion-icon name="star-half-outline"></ion-icon>
+                      <div class="popup__left-wrapper">
+                        <div class="popup__rating-wrapper">
+                          <span class="popup__rating">9.7/10</span>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="popup__icons-box">
+                          <span class="popup__bookmark">book a ticket</span>
+                          <ion-icon class="popup__icons" name="cart-outline"></ion-icon>
+                          <ion-icon class="popup__icons popup__icons-filled" name="cart"></ion-icon>
+                        </div>
+
+                        <a class="popup__link" href="https://www.youtube.com/watch?v=aOC8E8z_ifw">watch trailer</a>
                       </div>
-                      <form>
-                        <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
-                      </form>
+
+                      <div class="popup__form-wrapper">
+                        <form class="popup__form">
+                          <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
+                          <p class="popup__price">$10</p>
+                        </form>
+
+                        <div class="popup__date-wrapper">
+                          <p class="popup__date">may 1</p>
+                          <p class="popup__time">10:00</p>
+                          <p class="popup__room">vip 2</p>
+                          <p class="popup__place">r22</p>
+                        </div>
+                      </div>
+
+                      <div class="left__bottom">
+                        <div class="left__bottom-img-wrapper">
+                          <img class="left__bottom-img" src="./img/mastercard.png" alt="">
+                          <img class="left__bottom-img" src="./img/visa.png" alt="">
+                          <img class="left__bottom-img" src="./img/paypal.png" alt="">
+                        </div>
+                        
+                        <div class="popup__bottom-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor neque nobis nesciunt
+                          debitis voluptas tenetur rerum dicta, ipsam provident qui odio autem, delectus eveniet aliquam
+                          eaque, sit impedit mollitia!
+                        </div>
+                      </div>
                     </div>
 
                     <div class="popup__bottom-right">
@@ -354,8 +390,8 @@
                     <img class="popup_img" src="./img/joker.jpeg" width="60%" height="auto" alt="">
 
                     <div class="popup__text">
-                      <p class="popup__heading">mandalorian</p>
-                      
+                      <p class="popup__heading">joker</p>
+
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum veritatis fuga debitis,
                         deleniti tempore accusantium labore atque eius laboriosam architecto dicta maiores neque vitae
                         nulla
@@ -378,13 +414,48 @@
 
                   <div class="popup__bottom">
                     <div class="popup__bottom-left">
-                      <div class="popup__rating-wrapper">
-                        <span class="popup__rating">9.7/10</span>
-                        <ion-icon name="star-half-outline"></ion-icon>
+                      <div class="popup__left-wrapper">
+                        <div class="popup__rating-wrapper">
+                          <span class="popup__rating">9.7/10</span>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="popup__icons-box">
+                          <span class="popup__bookmark">book a ticket</span>
+                          <ion-icon class="popup__icons" name="cart-outline"></ion-icon>
+                          <ion-icon class="popup__icons popup__icons-filled" name="cart"></ion-icon>
+                        </div>
+
+                        <a class="popup__link" href="https://www.youtube.com/watch?v=zAGVQLHvwOY">watch trailer</a>
                       </div>
-                      <form>
-                        <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
-                      </form>
+
+                      <div class="popup__form-wrapper">
+                        <form class="popup__form">
+                          <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
+                          <p class="popup__price">$10</p>
+                        </form>
+
+                        <div class="popup__date-wrapper">
+                          <p class="popup__date">may 1</p>
+                          <p class="popup__time">10:00</p>
+                          <p class="popup__room">vip 2</p>
+                          <p class="popup__place">r22</p>
+                        </div>
+                      </div>
+
+                      <div class="left__bottom">
+                        <div class="left__bottom-img-wrapper">
+                          <img class="left__bottom-img" src="./img/mastercard.png" alt="">
+                          <img class="left__bottom-img" src="./img/visa.png" alt="">
+                          <img class="left__bottom-img" src="./img/paypal.png" alt="">
+                        </div>
+                        
+                        <div class="popup__bottom-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor neque nobis nesciunt
+                          debitis voluptas tenetur rerum dicta, ipsam provident qui odio autem, delectus eveniet aliquam
+                          eaque, sit impedit mollitia!
+                        </div>
+                      </div>
                     </div>
 
                     <div class="popup__bottom-right">
@@ -481,8 +552,8 @@
                     <img class="popup_img" src="./img/maxresdefault.jpg" width="60%" height="auto" alt="">
 
                     <div class="popup__text">
-                      <p class="popup__heading">mandalorian</p>
-                      
+                      <p class="popup__heading">fast & furious</p>
+
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum veritatis fuga debitis,
                         deleniti tempore accusantium labore atque eius laboriosam architecto dicta maiores neque vitae
                         nulla
@@ -505,13 +576,48 @@
 
                   <div class="popup__bottom">
                     <div class="popup__bottom-left">
-                      <div class="popup__rating-wrapper">
-                        <span class="popup__rating">9.7/10</span>
-                        <ion-icon name="star-half-outline"></ion-icon>
+                      <div class="popup__left-wrapper">
+                        <div class="popup__rating-wrapper">
+                          <span class="popup__rating">9.7/10</span>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="popup__icons-box">
+                          <span class="popup__bookmark">book a ticket</span>
+                          <ion-icon class="popup__icons" name="cart-outline"></ion-icon>
+                          <ion-icon class="popup__icons popup__icons-filled" name="cart"></ion-icon>
+                        </div>
+
+                        <a class="popup__link" href="https://www.youtube.com/watch?v=uisBaTkQAEs">watch trailer</a>
                       </div>
-                      <form>
-                        <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
-                      </form>
+
+                      <div class="popup__form-wrapper">
+                        <form class="popup__form">
+                          <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
+                          <p class="popup__price">$10</p>
+                        </form>
+
+                        <div class="popup__date-wrapper">
+                          <p class="popup__date">may 1</p>
+                          <p class="popup__time">10:00</p>
+                          <p class="popup__room">vip 2</p>
+                          <p class="popup__place">r22</p>
+                        </div>
+                      </div>
+
+                      <div class="left__bottom">
+                        <div class="left__bottom-img-wrapper">
+                          <img class="left__bottom-img" src="./img/mastercard.png" alt="">
+                          <img class="left__bottom-img" src="./img/visa.png" alt="">
+                          <img class="left__bottom-img" src="./img/paypal.png" alt="">
+                        </div>
+                        
+                        <div class="popup__bottom-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor neque nobis nesciunt
+                          debitis voluptas tenetur rerum dicta, ipsam provident qui odio autem, delectus eveniet aliquam
+                          eaque, sit impedit mollitia!
+                        </div>
+                      </div>
                     </div>
 
                     <div class="popup__bottom-right">
@@ -608,8 +714,8 @@
                     <img class="popup_img" src="./img/thumb-1920-911204.jpg" width="60%" height="auto" alt="">
 
                     <div class="popup__text">
-                      <p class="popup__heading">mandalorian</p>
-                      
+                      <p class="popup__heading">ready player one</p>
+
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum veritatis fuga debitis,
                         deleniti tempore accusantium labore atque eius laboriosam architecto dicta maiores neque vitae
                         nulla
@@ -632,13 +738,48 @@
 
                   <div class="popup__bottom">
                     <div class="popup__bottom-left">
-                      <div class="popup__rating-wrapper">
-                        <span class="popup__rating">9.7/10</span>
-                        <ion-icon name="star-half-outline"></ion-icon>
+                      <div class="popup__left-wrapper">
+                        <div class="popup__rating-wrapper">
+                          <span class="popup__rating">9.7/10</span>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="popup__icons-box">
+                          <span class="popup__bookmark">book a ticket</span>
+                          <ion-icon class="popup__icons" name="cart-outline"></ion-icon>
+                          <ion-icon class="popup__icons popup__icons-filled" name="cart"></ion-icon>
+                        </div>
+
+                        <a class="popup__link" href="https://www.youtube.com/watch?v=cSp1dM2Vj48">watch trailer</a>
                       </div>
-                      <form>
-                        <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
-                      </form>
+
+                      <div class="popup__form-wrapper">
+                        <form class="popup__form">
+                          <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
+                          <p class="popup__price">$10</p>
+                        </form>
+
+                        <div class="popup__date-wrapper">
+                          <p class="popup__date">may 1</p>
+                          <p class="popup__time">10:00</p>
+                          <p class="popup__room">vip 2</p>
+                          <p class="popup__place">r22</p>
+                        </div>
+                      </div>
+
+                      <div class="left__bottom">
+                        <div class="left__bottom-img-wrapper">
+                          <img class="left__bottom-img" src="./img/mastercard.png" alt="">
+                          <img class="left__bottom-img" src="./img/visa.png" alt="">
+                          <img class="left__bottom-img" src="./img/paypal.png" alt="">
+                        </div>
+                        
+                        <div class="popup__bottom-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor neque nobis nesciunt
+                          debitis voluptas tenetur rerum dicta, ipsam provident qui odio autem, delectus eveniet aliquam
+                          eaque, sit impedit mollitia!
+                        </div>
+                      </div>
                     </div>
 
                     <div class="popup__bottom-right">
@@ -732,11 +873,11 @@
               <div class="popup">
                 <div class="popup__wrapper">
                   <div class="popup__content">
-                    <img class="popup_img" src="./img/mandalorian.jpg" width="60%" height="auto" alt="">
+                    <img class="popup_img" src="./img/i.jpg" width="60%" height="auto" alt="">
 
                     <div class="popup__text">
-                      <p class="popup__heading">mandalorian</p>
-                      
+                      <p class="popup__heading">deadpool 2</p>
+
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum veritatis fuga debitis,
                         deleniti tempore accusantium labore atque eius laboriosam architecto dicta maiores neque vitae
                         nulla
@@ -759,13 +900,48 @@
 
                   <div class="popup__bottom">
                     <div class="popup__bottom-left">
-                      <div class="popup__rating-wrapper">
-                        <span class="popup__rating">9.7/10</span>
-                        <ion-icon name="star-half-outline"></ion-icon>
+                      <div class="popup__left-wrapper">
+                        <div class="popup__rating-wrapper">
+                          <span class="popup__rating">9.7/10</span>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="popup__icons-box">
+                          <span class="popup__bookmark">book a ticket</span>
+                          <ion-icon class="popup__icons" name="cart-outline"></ion-icon>
+                          <ion-icon class="popup__icons popup__icons-filled" name="cart"></ion-icon>
+                        </div>
+
+                        <a class="popup__link" href="https://www.youtube.com/watch?v=D86RtevtfrA">watch trailer</a>
                       </div>
-                      <form>
-                        <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
-                      </form>
+
+                      <div class="popup__form-wrapper">
+                        <form class="popup__form">
+                          <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
+                          <p class="popup__price">$10</p>
+                        </form>
+
+                        <div class="popup__date-wrapper">
+                          <p class="popup__date">may 1</p>
+                          <p class="popup__time">10:00</p>
+                          <p class="popup__room">vip 2</p>
+                          <p class="popup__place">r22</p>
+                        </div>
+                      </div>
+
+                      <div class="left__bottom">
+                        <div class="left__bottom-img-wrapper">
+                          <img class="left__bottom-img" src="./img/mastercard.png" alt="">
+                          <img class="left__bottom-img" src="./img/visa.png" alt="">
+                          <img class="left__bottom-img" src="./img/paypal.png" alt="">
+                        </div>
+                        
+                        <div class="popup__bottom-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor neque nobis nesciunt
+                          debitis voluptas tenetur rerum dicta, ipsam provident qui odio autem, delectus eveniet aliquam
+                          eaque, sit impedit mollitia!
+                        </div>
+                      </div>
                     </div>
 
                     <div class="popup__bottom-right">
@@ -859,11 +1035,11 @@
               <div class="popup">
                 <div class="popup__wrapper">
                   <div class="popup__content">
-                    <img class="popup_img" src="./img/joker.jpeg" width="60%" height="auto" alt="">
+                    <img class="popup_img" src="./img/nowayhome.jpg" width="60%" height="auto" alt="">
 
                     <div class="popup__text">
-                      <p class="popup__heading">mandalorian</p>
-                      
+                      <p class="popup__heading">spider-man: no way home</p>
+
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum veritatis fuga debitis,
                         deleniti tempore accusantium labore atque eius laboriosam architecto dicta maiores neque vitae
                         nulla
@@ -886,13 +1062,48 @@
 
                   <div class="popup__bottom">
                     <div class="popup__bottom-left">
-                      <div class="popup__rating-wrapper">
-                        <span class="popup__rating">9.7/10</span>
-                        <ion-icon name="star-half-outline"></ion-icon>
+                      <div class="popup__left-wrapper">
+                        <div class="popup__rating-wrapper">
+                          <span class="popup__rating">9.7/10</span>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="popup__icons-box">
+                          <span class="popup__bookmark">book a ticket</span>
+                          <ion-icon class="popup__icons" name="cart-outline"></ion-icon>
+                          <ion-icon class="popup__icons popup__icons-filled" name="cart"></ion-icon>
+                        </div>
+
+                        <a class="popup__link" href="https://www.youtube.com/watch?v=JfVOs4VSpmA">watch trailer</a>
                       </div>
-                      <form>
-                        <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
-                      </form>
+
+                      <div class="popup__form-wrapper">
+                        <form class="popup__form">
+                          <input placeholder="tickets" class="popup__tick" type="number" name="ticketNum">
+                          <p class="popup__price">$10</p>
+                        </form>
+
+                        <div class="popup__date-wrapper">
+                          <p class="popup__date">may 1</p>
+                          <p class="popup__time">10:00</p>
+                          <p class="popup__room">vip 2</p>
+                          <p class="popup__place">r22</p>
+                        </div>
+                      </div>
+
+                      <div class="left__bottom">
+                        <div class="left__bottom-img-wrapper">
+                          <img class="left__bottom-img" src="./img/mastercard.png" alt="">
+                          <img class="left__bottom-img" src="./img/visa.png" alt="">
+                          <img class="left__bottom-img" src="./img/paypal.png" alt="">
+                        </div>
+                        
+                        <div class="popup__bottom-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor neque nobis nesciunt
+                          debitis voluptas tenetur rerum dicta, ipsam provident qui odio autem, delectus eveniet aliquam
+                          eaque, sit impedit mollitia!
+                        </div>
+                      </div>
                     </div>
 
                     <div class="popup__bottom-right">
