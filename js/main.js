@@ -2,14 +2,17 @@ let popup = document.querySelectorAll(".popup");
 let button = document.querySelectorAll(".pop__button");
 let slideBtn = document.querySelector(".top__btn");
 let slider = document.querySelector(".slider");
-let day = document.querySelector(".day")
-let night = document.querySelector(".night")
+let day = document.querySelector(".day");
+let night = document.querySelector(".night");
+
 let a;
 
+let newA = JSON.parse(localStorage.getItem("a"));
 
 function colorChange(a) {
+  if (a == "day") {
+    localStorage.setItem("a", JSON.stringify("day"))
 
-  if (a !== "night") {
     document.body.style.backgroundColor = "white"
     document.querySelector(".menu__section").style.borderRight = "1px solid black"
     let logo = document.querySelector(".logo");
@@ -50,6 +53,8 @@ function colorChange(a) {
     }
   }
   else {
+    localStorage.setItem("a", JSON.stringify("night"))
+
     document.body.style.backgroundColor = ""
     document.querySelector(".menu__section").style.borderRight = ""
     let logo = document.querySelector(".logo");
@@ -91,7 +96,7 @@ function colorChange(a) {
   }
 }
 
-day.addEventListener("click", () => {
+function daySwitch() {
   slider.style.left = "28px"
   day.style.fontSize = "20px"
   day.style.color = "black"
@@ -104,9 +109,9 @@ day.addEventListener("click", () => {
   a = "day"
 
   colorChange(a)
-})
+}
 
-night.addEventListener("click", () => {
+function nightSwitch() {
   slider.style.left = ""
   day.style.fontSize = ""
   night.style.fontSize = ""
@@ -119,8 +124,17 @@ night.addEventListener("click", () => {
   a = "night";
 
   colorChange(a)
-})
+}
 
+day.addEventListener("click", daySwitch)
+
+night.addEventListener("click", nightSwitch)
+
+if(newA == "day"){
+  daySwitch()
+}else{
+  nightSwitch()
+}
 
 for (let index = 0; index < button.length; index++) {
   let buttonNum = button[index];
