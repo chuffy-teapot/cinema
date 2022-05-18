@@ -143,8 +143,11 @@ body {
   padding: 0 20px;
 }
 
+.content__top{
+  display: flex;
+}
 
-.content__top {
+.top__text {
   margin: 0 auto;
   margin-bottom: 20px;
   width: fit-content;
@@ -154,7 +157,42 @@ body {
   user-select: none;
 }
 
-.content__top:hover {
+.top__text:hover {
+  color: #E0FFFF;
+}
+
+.top__btn{
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #E0FFFF;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.slider{
+  width: 25px;
+  height: 25px;
+  background-color: #434d57;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.35px;
+  left: 3px;
+  transition: all .3s ease;
+}
+
+.day{
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all .3s ease;
+}
+
+.night{
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
   color: #E0FFFF;
 }
 
